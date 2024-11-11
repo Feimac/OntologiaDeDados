@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos/"
+     xml:base="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:trabalhoGrafos="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#comporta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#comporta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#esta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#esta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#naoComporta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#naoComporta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#opera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#opera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Motorista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#operaNa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#operaNa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#paraEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#paraEm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#passaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#passaPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Região"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#nomeLinhaOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#nomeLinhaOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#temCor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#temCor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#temTipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#temTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Alimentador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Alimentador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Bairro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Bairro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Região"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Centro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Centro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Região"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Expresso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Expresso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#ExpressoLigeirao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#ExpressoLigeirao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Interbairros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Interbairros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ligeirinho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ligeirinho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Linha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Motorista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Motorista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Pessoa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Passageiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Passageiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Passageiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ponto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ponto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Região -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Região"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Terminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Terminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Tubo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Tubo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Parada"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Boqueirão -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Boqueirão">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Expresso"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#EstacaoTuboUTFPR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#EstacaoTuboUTFPR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Centro"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Tubo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#GE703 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#GE703">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Onibus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#João -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#João">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Motorista"/>
+        <trabalhoGrafos:opera rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Boqueirão"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#TerminalCarmo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#TerminalCarmo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Bairro"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Terminal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Alimentador"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Expresso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#ExpressoLigeirao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Interbairros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ligeirinho"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Ponto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Terminal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2024/10/trabalhoGrafos#Tubo"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
